@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css_reset.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        *,*:before,*:after{
+	    box-sizing: border-box;
+        }
+
+        .wrap{
+            max-width: 1000px;
+            margin: 0 auto;
+        }
+        .header{
+            
+            height: 30px;
+            background-color: #f6f6f6;
+            display: flex;
+            justify-content: flex-end;
+            
+        }
+        .nav{
+            
+            display: flex;
+            margin-top: 10px;
+            justify-content: space-between;   
+            margin-top: 10px;
+            flex-wrap:  wrap ;
+        }
+        .rightnav{
+            display: flex;
+            align-items: center;
+            
+        }
+        .logo{
+            background-image: url("images/logo.png");
+            display: block;
+            width: 170px;
+            height: 37px;
+            overflow:hidden;
+            white-space: nowrap;
+        }
+        .list{
+            margin-right: 5px;
+        }
+        
+        @media(max-width:767px){
+            .nav{
+                flex-direction: column;
+            }
+            .logo{
+                margin:0 auto;
+            }
+            .rightnav li{
+                width:49%;
+            }
+            .rightnav{
+                flex-wrap: wrap;
+                justify-content: center;
+                text-align: center;
+            }
+            
+        }
+        .content{
+            
+            display:flex;
+            margin-top: 30px;
+            
+            justify-content: space-between;
+        }
+        .insidecontent{
+            height:330px;
+            margin-right: 1px;
+            border:1px solid black; 
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            padding:15px;
+        }
+        @media(max-width:767px){
+            .insidecontent{
+                width:100%;
+            }
+            .content{
+                flex-direction: column;
+            }
+
+        }
+    </style>
+</head>
+<body>
+    <div class="wrap">
+        <div>
+        <ul class="header">
+        
+                <li><img style="margin-top:6px" src="images/facebookIcon.png" >粉絲團 |</li>
+                <li><img style="margin-top:6px" src="images/twitter.png">粉絲團 </li> 
+        </ul>
+        </div>
+        <div>
+            <div class="nav">
+                <h1><div class="logo"></div></h1>
+                <ul class="rightnav">
+                    <li class="list"><a href="#">首頁</a></li>
+                    <li class="list"><a href="#">產品介紹</a></li>
+                    <li class="list"><a href="#">部落格</a></li>
+                    <li class="list"><a href="#">聯絡我們</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="content">
+            <div class="insidecontent">
+                <img style="margin-bottom: 10px;" src="images/feature-html5.png">
+                <h3 style="text-align: center;margin-bottom: 10px">Html 5 基礎教學</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa voluptatibus ducimus dolores tempora, in repellat adipisci modi facilis mollitia provident nulla, quae cum quibusdam, nisi laborum cupiditate odio ipsum sequi!</p>
+            </div>
+            <div class="insidecontent">
+                <img style="margin-bottom: 10px;"src="images/feature-jquery.png">
+                <h3 style="text-align: center;margin-bottom: 10px">jQuery 基礎教學</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa voluptatibus ducimus dolores tempora, in repellat adipisci modi facilis mollitia provident nulla, quae cum quibusdam, nisi laborum cupiditate odio ipsum sequi!</p>
+            </div>
+            <div class="insidecontent">
+                <img style="margin-bottom: 10px;"src="images/feature-rwd.png">
+                <h3 style="text-align: center;margin-bottom: 10px">Html 5 基礎教學</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa voluptatibus ducimus dolores tempora, in repellat adipisci modi facilis mollitia provident nulla, quae cum quibusdam, nisi laborum cupiditate odio ipsum sequi!</p>
+            </div>
+        </div>
+        
+    </div>
+</body>
+</html>
